@@ -66,7 +66,7 @@ p {
     line-height: 1.4;
 }
 
-.container, header {
+.container {
     width: 800px;
     margin: 0 auto;
 }
@@ -85,7 +85,6 @@ p {
     padding-bottom: 20px;  
 }
 
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -96,7 +95,7 @@ p {
     margin-bottom: 0;
 }
 
-.middle-content .boxes, section.middle-section {
+.middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -105,7 +104,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    /* background: black; */
+    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -144,113 +143,4 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
-}
-
-nav.main-nav {
-    width: 100%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-right: 50px; 
-}
-
-nav.main-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-nav.main-nav a:hover {
-    color: palevioletred;
-    font-style: italic;
-}
-
-header img.jumbo-img {
-    width: 100%;
-    margin: 20px 0px;
-}
-/* 
-div.box.teal-background {
-    background: teal;
-} */
-
-div.box:nth-child(1) {
-    background: teal;
-}
-div.box:nth-child(2) {
-    background: gold;
-}
-div.box:nth-child(3) {
-    background: cadetblue;
-}
-div.box:nth-child(4) {
-    background: coral;
-}
-div.box:nth-child(5) {
-    background: crimson;
-}
-div.box:nth-child(6) {
-    background: forestgreen;
-}
-div.box:nth-child(7) {
-    background: darkorchid;
-}
-div.box:nth-child(8) {
-    background: hotpink;
-}
-div.box:nth-child(9) {
-    background: indigo;
-}
-div.box:nth-child(10) {
-    background: dodgerblue;
-}
-
-
-
-div.info-container {
-    width: 45%;
-    margin-bottom: 50px;
-    border-bottom: 1px dashed black;
-}
-
-div.info-container img {
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-div.info-container p, div.info-container button, section.bottom-section p, footer nav a, * p {
-    font-family: 'Rubik', sans-serif;
-}
-
-div.info-container button {
-    margin: 25px 0px 20px;
-    border: solid black 2px;
-    background: white;
-    padding: 5px 25px;
-    border-radius: 10px; 
-    font-size: 18px;
-    cursor: pointer;
-}
-
-@keyframes example {
-    0%   {background-color: lightgrey;}
-    50%  {background-color: darkgray;}
-    100% {background-color: lightgrey;}
-}
-
-div.info-container button:hover {
-    animation: example 3s infinite;
-
-}
-
-section.bottom-section {
-    width: 95%;
-    margin: auto;
-    padding-bottom: 40px;
-}
-
-footer nav a:hover {
-    color: darkcyan;
-    font-style: italic;
 }
